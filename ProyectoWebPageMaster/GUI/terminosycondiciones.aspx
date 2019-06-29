@@ -28,7 +28,7 @@
                             <div class="f_icon">
                                 <img src="../recursos/img/icon/f-icon-2.png" alt="">
                             </div>
-                            <h4>No copiar las historias de otros</h4>
+                            <h4>No al plagio</h4>
                             <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
                             <a class="more_btn" href="#">Leer mas</a>
                         </div>
