@@ -13,7 +13,7 @@
                      <div class="contenedor">
              <div class="input-contenedor">
                 <i class="fas fa-user-circle icon"></i>
-                <asp:TextBox ID="txt_Usuario" placeholder="Nombre de Usuario" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_Usuario" placeholder="Usuario" runat="server"></asp:TextBox>
             </div>        
              <div class="input-contenedor">
               <i class="fas fa-lock icon"></i>
