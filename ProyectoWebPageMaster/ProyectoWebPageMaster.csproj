@@ -69,7 +69,6 @@
   <ItemGroup>
     <Content Include="GUI\abcclasificacion.aspx" />
     <Content Include="GUI\abcestatus.aspx" />
-    <Content Include="GUI\abcGenero.aspx" />
     <Content Include="GUI\abccEstadoyPais.aspx" />
     <Content Include="GUI\abc_tipousuario.aspx" />
     <Content Include="GUI\abc_tipousuario2.aspx" />
@@ -403,13 +402,6 @@
     </Compile>
     <Compile Include="GUI\abcestatus.aspx.designer.cs">
       <DependentUpon>abcestatus.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\abcGenero.aspx.cs">
-      <DependentUpon>abcGenero.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\abcGenero.aspx.designer.cs">
-      <DependentUpon>abcGenero.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\abccEstadoyPais.aspx.cs">
       <DependentUpon>abccEstadoyPais.aspx</DependentUpon>
