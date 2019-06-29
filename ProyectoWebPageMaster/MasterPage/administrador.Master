@@ -1,5 +1,9 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="administrador.master.cs" Inherits="ProyectoWebPageMaster.MasterPage.administrador" %>
-
+<style type="text/css">
+    .imagen{
+       border-radius:1000px !important;   
+    }
+</style>
 <!DOCTYPE html>
 
 <html>
@@ -125,8 +129,8 @@
 		 	 <br />
 		 <br />
   <div class="ih-item circle effect1"><a href="#">
-        <div class="spinner"></div>
-        <div class="img"><img src="../recursos/img/fotos_perfil/perfil.jpg" alt="img"></div>
+        <div class="spinner imagen"></div>
+        <div class="img "><img src="../recursos/img/fotos_perfil/perfil.jpg" alt="img"/></div>
         <div class="info">
           <div class="info-back">
             <h3>Sarai Pech</h3>
