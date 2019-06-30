@@ -77,7 +77,6 @@
     <Content Include="GUI\Ciencia_Ficcion.aspx" />
     <Content Include="GUI\Espiritual.aspx" />
     <Content Include="GUI\home.aspx" />
-    <Content Include="GUI\HtmlPage1.html" />
     <Content Include="GUI\index.aspx" />
     <Content Include="GUI\login.aspx" />
     <Content Include="GUI\pais.aspx" />
