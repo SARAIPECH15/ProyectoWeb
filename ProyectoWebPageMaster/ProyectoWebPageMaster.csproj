@@ -135,6 +135,7 @@
     <Content Include="recursos\img\Historia_Corta_Libro\9788420651361.jpg" />
     <Content Include="recursos\img\Historia_Corta_Libro\9788420697116.jpg" />
     <Content Include="recursos\img\Historia_Corta_Libro\El baile.jpg" />
+    <Content Include="recursos\img\home-slider\libro2.png" />
     <Content Include="recursos\img\home-slider\slider-bg-1.png" />
     <Content Include="recursos\img\home-slider\slider-m-1.png" />
     <Content Include="recursos\img\Humor\me-vestire-de-medianoche-9788415831037-196x300.jpg" />
@@ -165,6 +166,7 @@
     <Content Include="recursos\img\instagram\right-instagram\r-in-6.jpg" />
     <Content Include="recursos\img\iphone4.png" />
     <Content Include="recursos\img\leyendo.png" />
+    <Content Include="recursos\img\libro.png" />
     <Content Include="recursos\img\Libro_Aventura\dificil-de-doblegar.jpg" />
     <Content Include="recursos\img\Libro_Aventura\los-nietos-de-dios.jpg" />
     <Content Include="recursos\img\Libro_Aventura\mareas-del-tiempo.jpg" />
