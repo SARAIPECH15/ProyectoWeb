@@ -13,5 +13,35 @@ namespace ProyectoWebPageMaster.GUI
 		{
 
 		}
-	}
+
+        protected void txt_estatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_GuardarEstatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_ModificarEstatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_EliminarEstatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void dgv_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+
+        }
+
+        protected void dgv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

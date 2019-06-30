@@ -1,34 +1,23 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Site1.Master" AutoEventWireup="true" CodeBehind="abccEstadoyPais.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.abcsubclasificacionaspx" EnableEventValidation="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/administrador.Master" AutoEventWireup="true" CodeBehind="abccEstadoyPais.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.abcsubclasificacionaspx" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+	.form-control {}
+    .paddincito {
+        padding:60px;
+    }
+</style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div class="col-md-12 colorform">
-        
-            <br /><br /><br /><br />
-            	<div class="row">
-	         <div class="col-md-5"></div>
-             <div class="col-md-2">
-
-                   <!-- normal -->
-    <div class="ih-item circle effect1"><a href="#">
-        <div class="spinner"></div>
-        <div class="img"><img src="../recursos/img/fotos_perfil/perfil.jpg" alt="img"></div>
-        <div class="info">
-          <div class="info-back">
-            <h3>Sarai Pech</h3>
-            <p>sarita@gmail.com</p>
-          </div>
-        </div></a></div>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 		  
     <!-- end normal -->
          
 
-             </div>
+           <!---  </div>
              <div class="col-md-5"></div>
                     </div>
 
-	</div>
-    <br />
-    <div class="col-md-12">
+	</div>--->
+   
+   <!-- <div class="col-md-12">
 
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -47,8 +36,8 @@
 
 </ul>
 
-  </div>
-	<div>
+  </div>--->
+	<!---<div>
 
  <nav class="navbar-default navbar-side"  role="navigation">
             <div class="sidebar-collapse">
@@ -91,86 +80,74 @@
 
         </nav>
 
-		</div>
+		</div>--->
         <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" >
-            <div id="page-inner">
-                <div class="row">
-                    <div class="col-lg-12">
-                     <h2>ADMIN DASHBOARD</h2>   
-                    </div>
+     <!--   <div id="page-wrapper" >-->
+          <!--  <div id="page-inner">--->
+                <div class="row paddincito">
+                   
+                     <h2>ADMIN DASHBOARD</h2> 
+                          <asp:Button ID="Btn_returnMaster" runat="server" CssClass="btn btn-outline-danger" Text="Return" OnClick="Btn_returnMaster_Click" />
+                
                 </div>              
                  <!-- /. ROW  -->
-                  <hr />
-                <div class="row">
+            
+             <!--   <div class="row">
                     <div class="col-lg-12 ">
                         <div class="alert alert-info">
-                             <strong>Welcome Jhon Doe ! </strong> You Have No pending Task For Today.
-                        </div>
+                             <strong>Welcome Jhon Doe ! </strong> You Have No pending Task For Today.--->
+                          
+                     <!--   </div>
                        
                     </div>
-                    </div>
+                    </div>--->
 
-				<hr>
-				 <div class="row">
-					<div class="col-lg-6 col-md-6">
-						<h5>Ingresa Los datos</h5>
-					
-					<div class="form-group">
+    <div class="row paddincito">
+	 <div class="container-fluid">
+<section class="resume-section align-items-center" >
+	<div class="col-mb-8">
+		<div class="card text-center" style="position:inherit">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Tipos de Usuario</h5>
+    <p class="card-text">Ingrese los datos aquí:</p>
+				
                          <asp:textbox runat="server" visible="false" id="txtidpais"></asp:textbox>
                             <label>Pais:</label><br />
-                             <asp:TextBox ID="txtpais" runat="server"></asp:TextBox><br />
-                           
-                            
-
-
-
-                        </div>
+                             <asp:TextBox ID="txtpais" CssClass="form-control" runat="server"></asp:TextBox><br />
+                                                                  
 						<br />
                         <asp:Button ID="btnagregar" runat="server" Text="Agregar " CssClass="btn btn-outline-danger" OnClick="btnagregar_Click" />
                         <asp:Button ID="btnmodificar" runat="server" Text="Modificar" CssClass="btn btn-outline-danger" OnClick="btnmodificar_Click" />
                         <asp:Button ID="btneliminar" runat="server" Text="Eliminar" CssClass="btn btn-outline-danger" OnClick="btneliminar_Click" />
-						
-                        <br>
-                        <br>
-                       
-                      
-
-
-                    </div>
-
-
-
-
-
-
+					
 					
                     <div class="col-lg-6 col-md-6">
-                        <h5>Table  Sample Two5>
+                      
                         <div class="table-responsive">
                            
                            <asp:GridView ID="GridViewpaises" runat="server" OnRowDataBound="GridViewpaises_RowDataBound" OnSelectedIndexChanged="GridViewpaises_SelectedIndexChanged"></asp:GridView>
 
                         </div>
                     </div>
-                </div>
+           
                 <!-- /. ROW  -->
                 <hr>
-
-                 <div class="row">
-					<div class="col-lg-6 col-md-6">
+               
 						<h5>Ingresa Los datos del Estado</h5>
 					
-					<div class="form-group">
+					
                             <label>Estado:</label><br />
-                             <asp:TextBox ID="txtestado" runat="server"></asp:TextBox><br />
+                             <asp:TextBox ID="txtestado" CssClass="form-control" runat="server"></asp:TextBox><br />
                            <label>Estado:</label><br />
                         <asp:DropDownList ID="dropPaises" runat="server" OnSelectedIndexChanged="dropPaises_SelectedIndexChanged"></asp:DropDownList>
                             
                          <asp:textbox runat="server" visible="false" id="txtidestado"></asp:textbox><br />
 
 
-                        </div>
+                        
 						<br />
                         <asp:Button ID="btnagregarEstado" runat="server" Text="Agregar " CssClass="btn btn-outline-danger" OnClick="btnagregarEstado_Click" />
                         <asp:Button ID="btnmodificarEstado" runat="server" Text="Modificar" CssClass="btn btn-outline-danger" OnClick="btnmodificarEstado_Click" />
@@ -181,7 +158,7 @@
                        
                       
 
-
+            </div>
                     </div>
 
 
@@ -191,7 +168,7 @@
 
 					
                     <div class="col-lg-6 col-md-6">
-                        <h5>Table  Sample Two5>
+                      
                         <div class="table-responsive">
                            
                            <asp:GridView ID="gridviewestados" runat="server" OnSelectedIndexChanged="gridviewestados_SelectedIndexChanged"></asp:GridView>
@@ -199,20 +176,18 @@
                         </div>
                     </div>
                 </div>
+    
+    </section>
+         
+	  </div>
+        
 
-				</div>
-
-
-
-
-
-
-
-
-
+			
+      </div>
+		
 
 
-
+	
 
 
 
@@ -232,7 +207,21 @@
 
 
 
-				 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!--	 </div>-->
                  
 	  
 	<script src="../recursos/js/jquery-1.10.2.js"></script>
@@ -254,4 +243,5 @@
 
 
 </asp:Content>
+
 

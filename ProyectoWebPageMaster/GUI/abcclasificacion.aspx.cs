@@ -60,5 +60,10 @@ namespace ProyectoWebPageMaster.GUI
             txt_Codifgo_Cat.Text = dgv_clasificacion.SelectedRow.Cells[0].Text.Trim();
             txt_Categoria.Text = dgv_clasificacion.SelectedRow.Cells[1].Text.Trim();
         }
+
+        protected void Btn_ModificarCat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

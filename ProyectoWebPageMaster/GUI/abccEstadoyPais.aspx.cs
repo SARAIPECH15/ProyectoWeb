@@ -171,5 +171,10 @@ namespace ProyectoWebPageMaster.GUI
         {
 
         }
+
+        protected void Btn_returnMaster_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("abc_tipousuario2.aspx");
+        }
     }
 }

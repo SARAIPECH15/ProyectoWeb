@@ -1,131 +1,57 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Site1.Master" AutoEventWireup="true" CodeBehind="abcclasificacion.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.abccategoria" EnableEventValidation="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/administrador.Master" AutoEventWireup="true" CodeBehind="abcclasificacion.aspx.cs" Inherits="ProyectoWebPageMaster.GUI.abccategoria" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <style type="text/css">
+	.form-control {}
+    .paddincito {
+        padding:60px;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	    <div class="col-md-12 colorform">
-        
-            <br /><br /><br /><br />
-            	<div class="row">
-	         <div class="col-md-5"></div>
-             <div class="col-md-2">
+	  
 
                    <!-- normal -->
-    <div class="ih-item circle effect1"><a href="#">
-        <div class="spinner"></div>
-        <div class="img"><img src="../recursos/img/fotos_perfil/perfil.jpg" alt="img"></div>
-        <div class="info">
-          <div class="info-back">
-            <h3>Sarai Pech</h3>
-            <p>sarita@gmail.com</p>
-          </div>
-        </div></a></div>
+
     <!-- end normal -->
          
 
-             </div>
-             <div class="col-md-5"></div>
-                    </div>
+            
+           
+   
 
-	</div>
-    <br />
-    <div class="col-md-12">
+ 
 
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">General
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Conversaciones</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Estadisticas</a>
-  </li>
-<li class="pull-right"> <button type="button" class="btn btn-outline-primary">Editar Perfil</button>
- </li> 
-
-</ul>
-
-  </div>
-	<div>
-
- <nav class="navbar-default navbar-side"  role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu"  style="height:460PX" >
-                 
-
-
-                    <li class="active-link">
-                        <a href="index.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
-                    </li>
-                   
-
-                    <li>
-                        <a href="ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>
-                    </li>
-                    <li>
-                        <a href="blank.html"><i class="fa fa-edit "></i>Blank Page  <span class="badge">Included</span></a>
-                    </li>
-
-
-                    <li>
-                        <a href="#"><i class="fa fa-qrcode "></i>My Link One</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i>My Link Two</a>
-                    </li>
-
-                    <li>
-                        <a href="#"><i class="fa fa-edit "></i>My Link Three </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table "></i>My Link Four</a>
-                    </li>
-                     <li>
-                        <a href="#"><i class="fa fa-edit "></i>My Link Five </a>
-                    </li>
-                    
-                </ul>
-                            </div>
-
-        </nav>
-
-		</div>
-        <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" >
-            <div id="page-inner">
-                <div class="row">
-                    <div class="col-lg-12">
+		
+      
+                    <div class="row paddincito">
                      <h2>ADMIN DASHBOARD</h2>   
                     </div>
-                </div>              
-                 <!-- /. ROW  -->
-                  <hr />
-                <div class="row">
-                    <div class="col-lg-12 ">
-                        <div class="alert alert-info">
-                             <strong>Welcome Jhon Doe ! </strong> You Have No pending Task For Today.
-                        </div>
                        
-                    </div>
-                    </div>
+                 <!-- /. ROW  -->
+                  <div class="row paddincito">
+	 <div class="container-fluid">
+<section class="resume-section align-items-center" >
+	<div class="col-mb-8">
+		<div class="card text-center" style="position:inherit">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Tipos de Categoría</h5>
 
-				<hr>
-				 <div class="row">
-					<div class="col-lg-6 col-md-6">
-						<h5>Ingresa Los datos</h5>
-					
-					<div class="form-group">
-                            <label>Nombre PAIS</label><br />
+               
+
+			
+			
+                            <label>Nombre de la Categoría</label><br />
                         <asp:TextBox ID="txt_Categoria" CssClass="form-control" runat="server"></asp:TextBox><br />
                          <asp:TextBox ID="txt_Codifgo_Cat" CssClass="form-control" Visible="false" runat="server"></asp:TextBox><br />
-                            <label>Estado</label><br />
-                        <asp:DropDownList ID="listaEstados" runat="server"></asp:DropDownList>
+                           
+                      <!--  <asp:DropDownList ID="listaEstados" runat="server"></asp:DropDownList>-->
                          
 
-                        </div>
-						<br />
+                     
+				
        
                          <asp:Button ID="Btn_AgregarCat" CssClass="btn btn-outline-primary" runat="server" Text="Agregar" OnClick="Btn_AgregarCat_Click"/>
                          <asp:Button ID="Btn_ModificarCat" CssClass="btn btn-outline-primary" runat="server" Text="Modificar" OnClick="Btn_ModificarCat_Click"/>
@@ -145,17 +71,19 @@
 
 					
                     <div class="col-lg-6 col-md-6">
-                        <h5>Table  Sample Two</h5>
+                      
                         <div class="table-responsive">
                             <asp:GridView ID="dgv_clasificacion" CssClass="table table-hover" OnRowDataBound="dgv_clasificacion_RowDataBound" 
                                 OnSelectedIndexChanged="dgv_clasificacion_SelectedIndexChanged" NullDisplay="" runat="server"></asp:GridView>
                         </div>
                     </div>
+            </div>
+        
                 </div>
                 <!-- /. ROW  -->
                 <hr>
-
-
+    </section>
+         
 
 				</div>
 
